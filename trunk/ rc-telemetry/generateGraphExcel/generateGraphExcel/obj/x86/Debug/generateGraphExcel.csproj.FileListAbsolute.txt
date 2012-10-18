@@ -1,0 +1,12 @@
+E:\Users\Homer\AppData\Local\Temporary Projects\generateGraphExcel\obj\x86\Debug\generateGraphExcel.csproj.ResolveComReference.cache
+E:\Users\Homer\AppData\Local\Temporary Projects\generateGraphExcel\bin\Debug\generateGraphExcel.exe
+E:\Users\Homer\AppData\Local\Temporary Projects\generateGraphExcel\bin\Debug\generateGraphExcel.pdb
+E:\Users\Homer\AppData\Local\Temporary Projects\generateGraphExcel\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Users\Homer\AppData\Local\Temporary Projects\generateGraphExcel\obj\x86\Debug\generateGraphExcel.exe
+E:\Users\Homer\AppData\Local\Temporary Projects\generateGraphExcel\obj\x86\Debug\generateGraphExcel.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\generateGraphExcel\generateGraphExcel\obj\x86\Debug\generateGraphExcel.csproj.ResolveComReference.cache
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\generateGraphExcel\generateGraphExcel\obj\x86\Debug\generateGraphExcel.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\generateGraphExcel\generateGraphExcel\obj\x86\Debug\generateGraphExcel.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\generateGraphExcel\generateGraphExcel\bin\Debug\generateGraphExcel.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\generateGraphExcel\generateGraphExcel\bin\Debug\generateGraphExcel.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\generateGraphExcel\generateGraphExcel\obj\x86\Debug\ResolveAssemblyReference.cache

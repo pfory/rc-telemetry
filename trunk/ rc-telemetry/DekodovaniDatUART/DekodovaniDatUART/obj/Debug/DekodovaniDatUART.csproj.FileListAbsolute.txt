@@ -1,0 +1,5 @@
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DekodovaniDatUART\DekodovaniDatUART\bin\Debug\DekodovaniDatUART.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DekodovaniDatUART\DekodovaniDatUART\bin\Debug\DekodovaniDatUART.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DekodovaniDatUART\DekodovaniDatUART\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DekodovaniDatUART\DekodovaniDatUART\obj\Debug\DekodovaniDatUART.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DekodovaniDatUART\DekodovaniDatUART\obj\Debug\DekodovaniDatUART.pdb

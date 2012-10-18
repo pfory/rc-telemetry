@@ -1,0 +1,698 @@
+
+- pouzit ATMega8
+- zobrazovaci jednotka 16x2 øádky
+- mereni napeti na servisnim konektoru (1-5 clanek) pomoci AD prevodniku, zobrazeni na jedno desetinne misto
+- mereni druheho napeti, napriklad napeti prijimace pomoci AD prevodniku
+- mereni teplot pomoci cipu Dallas, cipy se pripojuji paralelne na sbernici, 
+	jejich pocet neni proto prakticky omezen, kvuli zobrazeni maximalne 4 teploty s presnosti na desetinu stupne
+- dekodovani dat z GPS modulu, NMEA protokol na Rx portu.
+- vytvoreni stavovych vet a jejich prenos pres RS232 do prijimace FrSky k odeslani na zem
+
+Tlakove cidlo pro Vario
+rozsah 15-115kPa, tomu odpovídá zmìna napìtí na výstupu z 0,2 na 4,7
+rozsah 100kPa=4.59V => 1kPa=0.0459V=45,9mV
+
+zmìna tlaku s výškou
+každých 8m zmìna o -1hPa což je zmìna o -4,59mV, 1m=0,57mV
+
+Rozsah pøevodníku
+2,56=1024 hodnot
+1 dílek=2.56/1024=0,0025V=2,5mV=4m
+
+0         1         2         3         4         5         6         
+0123456789012345678901234567890123456789012345678901234567890123456789
+GPRMC,190851.700,A,4943.84033,N,01323.70221,E,0.00,0.4,011210,0.0,E*5F
+GPGGA,200221.700,4943.83682,N,01323.69994,E,1,3,5.8,352.1,M,46.0,M,,*64
+
+
+DBOX
+displej 20x4 ~350Kc
+
+
+GPS information
+
+12345678901234567890
+lat	     speed
+--------------------
+N 49°43.830 13:20:21
+E013°23.708 01.12.10
+v:124km/h  h:1250.1m
+^325°          10sat
+-------------------- 
+lon	     alt
+
+Teploty a napìtí
+
+12345678901234567890
+--------------------
++125°C  -10°C  +15°C
+bat.:20.1V pal.:5.1V
+4.1 4.1 4.2 4.2 4.1V
+1è. 2.è 3.è 4.è 5.è
+--------------------
+
+Vario
+12345678901234567890
+--------------------
+
+
+
+--------------------
+
+menu=0
+1234567890123456
+----------------
+DBox v0.2
+22.12.2010 10:00
+----------------
+
+menu=1
+1234567890123456
+----------------
+N 49°43.830 1250
+E013°23.708  124 
+----------------
+
+menu=2
+1234567890123456
+----------------
+124km/h    1250m
+^325°      10sat
+----------------
+
+menu=3
+1234567890123456
+----------------
++125 -10 +15°C
+b:20.8V   p:5.1V
+----------------
+
+menu=4
+1234567890123456
+----------------
+4.1 4.1 4.2 4.2V
+4.2 5.1    20.8V
+----------------
+
+menu=5
+1234567890123456
+----------------
+AD1   AD2   RSSI 
+255   255    255
+----------------
+
+menu=6
+1234567890123456
+----------------
+AD1   AD2   RSSI 
+12.4V 5.1V   255
+----------------
+
+menu=7
+1234567890123456
+----------------
+Max vys :10234m
+Max rych:325km/h
+----------------
+
+
+
+
+--NASTAVENI
+menu=8
+1234567890123456
+----------------
+vyska letiste
+SET 345m n.m.
+----------------
+nastaveni vysky letiste
+
+--alarmy
+
+menu=9 a 10
+Napeti jednoho z clanku
+1234567890123456
+----------------
+Napeti clanek
+<3.7 V A:1
+----------------
+-napeti alarmNapetiClanek, A=typ alarmu alarmTypNapetiClanek
+
+
+menu=11 a 12
+Napeti baterie
+1234567890123456
+----------------
+Napeti baterie
+<10.7 V A:1
+----------------
+-napeti, A=typ alarmu
+
+Palubni napeti
+1234567890123456
+----------------
+Napeti palubni
+<5.0 V A:1
+----------------
+napeti, A=typ alarmu
+
+
+Vyska
+1234567890123456
+----------------
+Vyska po
+100m V AU:1 AD:2
+----------------
+-napeti, AU=typ alarmu pri stoupani, AD:typ alarmu pri klesani
+
+
+
+Hlavièka z GPS
+----------------
+$PSRFTXT,Version:  GSW3.5.0_3.5.00.00-SDK-3EP2.01 *46
+$PSRFTXT,PL-090709-NMEA4800_S_DM1_G1_CM205_KLP-LX*66
+$PSRFTXT,TOW:  162348*1F
+$PSRFTXT,WK:   1613*60
+$PSRFTXT,POS:  6378137 0 0*2A
+$PSRFTXT,CLK:  96250*25
+$PSRFTXT,CHNL: 12*73
+$PSRFTXT,Baud rate: 4800*65
+
+
+identifikátor zaøízení
+----------------------
+		adresa 	byte		data1byte data2byte
+ID	 	00 80	1XXXXXXX	0XXXXXXX
+
+
+
+OBSOLETE konstanty pro pøepoèet napìtí
+OBSOLETE -----------------------------
+OBSOLETE konstanty se posílají pouze pøi stisknutém párovacím tlaèítku
+
+OBSOLETE 		adresa 	byte		data1byte data2byte
+OBSOLETE 1.èlánek	20 94	10010100	0000000X  0XXXXXXX
+OBSOLETE 2.èlánek	21 95	10010101	0000000X  0XXXXXXX
+OBSOLETE 3.èlánek	22 96	10010110	0000000X  0XXXXXXX
+OBSOLETE 4.èlánek	23 97	10010111	0000000X  0XXXXXXX
+OBSOLETE 5.èlánek	24 98	10011000	0000000X  0XXXXXXX
+OBSOLETE palubní	25 99	10011001	0000000X  0XXXXXXX
+
+
+
+datová vìta GPS
+---------------
+49 43.8385N	+-89 59 999	7bit  6bit 10bit - 23bitù=4bajty
+013 23.7214E	+-179 59 999	9bit  6bit 10bit - 25bitù=4bajty
+lze využít pouze 7bitù z bajtu, takže pro pøenos potøebuju 8 bajtù
+výška 0-16384  14bitù
+rychlost 0-512 9bitù
+kurz 0-360 	9bitù
+sat in view 0-16 4bity	
+datum komprimace 8bitù
+èas komprimace	8bitù
+
+adresace údajù GPS
+		adresa 	byte		data1byte data2byte
+stupnì lat 	32 A0	10100000	0XXXXXXX
+minuty lat 	33 A1	10100001	00XXXXXX
+desetiny	34 A2	10100010	00000XXX  0XXXXXXX
+stupnì lon 	35 A3	10100011	0XXXXXXX
+minuty lon 	36 A4	10100100	00XXXXXX
+desetiny	37 A5	10100101	00000XXX  0XXXXXXX
+výška		38 A6	10100110	0XXXXXXX  0XXXXXXX
+rychlost	39 A7	10100111	000000XX  0XXXXXXX
+kurz		40 A8	10101000	000000XX  0XXXXXXX
+sat in view	41 A9	10101001	0000XXXX
+datum		42 AA	10101010	0000000X  0XXXXXXX 0XXXXXXX
+èas		43 AB	10101011	0000000X  0XXXXXXX 0XXXXXXX
+
+kompletní vìta 21byte, posílána 1x za sekundu
+
+datová vìta teploty
+-------------------
+4 èidla, rozsah -55 až +125, pøesnost na jednotky stupnì, 1 èidlo=8bitù
+
+adresace údajù teplot
+		adresa 	byte		data1byte data2byte
+1.èidlo		10 8A	10001010	0000000X  0XXXXXXX
+2.èidlo		11 8B	10001011	0000000X  0XXXXXXX
+3.èidlo		12 8C	10001100	0000000X  0XXXXXXX
+4.èidlo		13 8D	10001101	0000000X  0XXXXXXX
+
+kompletní vìta 8byte, posílána 1x za sekundu
+	
+datová vìta napìtí
+------------------
+rozsah napìtí jednotlivých èlánkù 0-4,12V, palubní 0-7?V pøenáší se jako 10bitù
+
+
+adresace údajù napìtí
+		adresa 	byte		data1byte data2byte
+1.èlánek	01 81	10000001	00000XXX  0XXXXXXX
+2.èlánek	02 82	10000010	00000XXX  0XXXXXXX
+3.èlánek	03 83	10000011	00000XXX  0XXXXXXX
+4.èlánek	04 84	10000100	00000XXX  0XXXXXXX
+5.èlánek	05 85	10000101	00000XXX  0XXXXXXX
+palubní		06 86	10000110	00000XXX  0XXXXXXX
+
+
+datová vìta DOP a fix
+-------------------
+		adresa 	byte		data1byte data2byte
+HDOP		44 AC	10101100	00000XXX  0XXXXXXX
+VDOP		45 AD	10101101	00000XXX  0XXXXXXX
+PDOP		46 AE	10101110	00000XXX  0XXXXXXX
+fix		47 AF	10101111	00000000  000000XX
+
+
+Krabièka
+http://www.gme.cz/cz/u-kp44-p622-735.html
+Rozmìr A (výška): 22 mm
+Rozmìr B (šíøka): 65 mm
+Rozmìr C (hloubka): 90 mm
+
+Orientaèní rozmìr DPS: 59 x 84 mm 
+
+
+www.frsky-rc.com
+
+
+80 FF 7F A0 31 A1 
+2B A2 06 39 
+A3 0D A4 17 A5 05 
+46 A6 02 6F 
+A7 00 00 A8 02 14 
+A9 04 AA 00 
+7B 0A AB 00 47 28 
+8A 01 6A 8B 
+01 69 81 04 22 82 
+04 22 83 04 
+22 84 04 22 85 04 
+22 86 18 18 
+F8 
+80 FF 7F A0 31 A1 
+2B A2 06 39 
+A3 0D A4 17 A5 05 
+46 A6 02 6F 
+A7 00 00 A8 02 14 
+A9 04 AA 00 
+7B 0A AB 00 47 28 
+8A 01 6A 8B 
+01 69 81 04 22 82 
+04 22 83 04 
+22 84 04 22 85 04 
+22 86 18 18 
+F8 
+80 FF 7F A0 31 A1 
+2B A2 06 39 
+A3 0D A4 17 A5 05 
+46 A6 02 6F 
+A7 00 00 A8 02 14 
+A9 04 AA 00 
+7B 0A AB 00 47 28 
+8A 01 6A 8B 
+01 69 81 04 22 82 
+04 22 83 04 
+22 84 04 22 85 04 
+22 86 18 18 
+F8 
+80 FF 7F A0 
+31 A1 2B A2 06 39 
+A3 0D A4 17 
+A5 05 46 A6 02 6F 
+A7 00 00 A8 
+02 14 A9 04 AA 00 
+7B 0A AB 00 
+47 2A 8A 01 6A 8B 
+01 69 81 04 
+22 82 04 22 83 04 
+22 84 04 22 
+85 04 22 86 18 18 
+F8 
+
+
+Prototyp RX
+-----------
+Na univerzální desce, propojení drátky. IO v paticích.
+
+Konektory:
+- GPS 3 kolík 90°
+- baterie 6 kolík 90°
+- do FrSky pøijímaèe pøipájený servokonektor
+- programovací 6 kolík rovný
+- DALLAS 2 kolík 90
+
+www.frsky-rc.com
+
+
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 07 AA 00 
+7C 34 AB 02 10 45 
+8A 01 52 81 
+04 5A 82 05 2B 83 
+05 5A 84 06 
+19 85 06 3D 86 18 
+E0 FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 A3 0D 
+A4 17 A5 05 
+39 A6 02 66 A7 00 
+00 A8 00 20 
+A9 06 AA 00 7C 34 
+AB 02 10 46 
+8A 01 52 81 04 62 
+82 05 26 83 
+05 5A 84 06 19 85 
+06 3E 86 18 
+9E FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 06 AA 00 
+7C 34 AB 02 10 46 
+8A 01 52 81 
+04 62 82 05 26 83 
+05 5F 84 06 
+23 85 06 3D 86 18 
+86 FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 06 AA 00 
+7C 34 AB 02 10 47 
+8A 01 52 81 
+04 51 82 05 23 83 
+05 52 84 06 
+15 85 06 3B 86 18 
+86 FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 06 AA 00 
+7C 34 AB 02 10 48 
+8A 01 52 81 
+04 63 82 05 2B 83 
+05 5C 84 06 
+15 85 06 3B 86 18 
+E0 FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 06 AA 00 
+7C 34 AB 02 10 48 
+8A 01 52 81 
+04 5C 82 05 2B 83 
+05 5C 84 06 
+21 85 06 39 86 18 
+06 FE 
+80 FF 7F A0 31 A1 
+2B A2 06 
+40 A3 0D A4 17 A5 
+05 39 A6 02 
+66 A7 00 00 A8 00 
+20 A9 06 AA 
+00 7C 34 AB 02 10 
+49 8A 01 52 
+81 04 5C 82 05 37 
+83 05 5E 84 
+06 27 85 06 3F 86 
+18 E6 FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 06 AA 00 
+7C 34 AB 02 10 49 
+8A 01 52 81 
+04 53 82 05 24 83 
+05 50 84 06 
+17 85 06 3F 86 18 
+E6 FE 
+80 FF 7F 
+A0 31 A1 2B A2 06 
+40 A3 0D A4 
+17 A5 05 39 A6 02 
+66 A7 00 00 
+A8 00 20 A9 06 AA 
+00 7C 34 AB 
+02 10 4A 8A 01 52 
+81 04 67 82 
+05 2F 83 05 50 84 
+06 17 85 06 
+36 86 18 E0 FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 06 AA 00 
+7C 34 AB 02 10 4A 
+8A 01 52 81 
+04 67 82 05 2F 83 
+05 5D 84 06 
+1F 85 06 3C 86 18 
+60 FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 06 AA 00 
+7C 34 AB 02 10 4A 
+8A 01 52 81 
+04 57 82 05 2D 83 
+05 57 84 06 
+19 85 06 3D 86 18 
+60 FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 06 AA 00 
+7C 34 AB 02 10 4A 
+8A 01 52 81 
+04 63 82 05 33 83 
+05 5B 84 06 
+19 85 06 3D 86 18 
+86 FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 07 AA 00 
+7C 34 AB 02 10 4C 
+8A 01 52 81 
+04 64 82 05 33 83 
+05 5B 84 06 
+1A 85 06 3A 86 18 
+66 FE 
+80 FF 7F A0 31 A1 
+2B 
+A2 06 40 A3 0D A4 
+17 A5 05 39 
+A6 02 66 A7 00 00 
+A8 00 20 A9 
+07 AA 00 7C 34 AB 
+02 10 4D 8A 
+01 52 81 04 64 82 
+05 39 83 05 
+62 84 06 21 85 06 
+3F 86 18 9E 
+FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 07 AA 00 
+7C 34 AB 02 10 4D 
+8A 01 52 81 
+04 56 82 05 28 83 
+05 59 84 06 
+21 85 06 3F 86 18 
+9E FE 
+80 
+FF 7F A0 31 A1 2B 
+A2 06 40 A3 
+0D A4 17 A5 05 39 
+A6 02 66 A7 
+00 00 A8 00 20 A9 
+07 AA 00 7C 
+34 AB 02 10 4E 8A 
+01 52 81 04 
+60 82 05 2D 83 05 
+59 84 06 21 
+85 06 40 86 18 E0 
+FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 07 AA 00 
+7C 34 AB 02 10 4E 
+8A 01 52 81 
+04 60 82 05 2D 83 
+05 5E 84 06 
+21 85 06 31 86 18 
+86 FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 07 AA 00 
+7C 34 AB 02 10 4F 
+8A 01 52 81 
+04 55 82 05 28 83 
+05 57 84 06 
+18 85 06 34 86 18 
+86 FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 07 AA 00 
+7C 34 AB 02 10 4F 
+8A 01 52 81 
+04 67 82 05 2E 83 
+05 5C 84 06 
+18 85 06 34 86 18 
+1E FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 07 AA 00 
+7C 34 AB 02 10 50 
+8A 01 52 81 
+04 65 82 05 2E 83 
+05 5C 84 06 
+21 85 06 3D 86 18 
+7E FE 
+80 FF 7F A0 
+31 A1 2B A2 06 40 
+A3 0D A4 17 
+A5 05 39 A6 02 66 
+A7 00 00 A8 
+00 20 A9 07 AA 00 
+7C 34 AB 02 
+10 50 8A 01 52 81 
+04 65 82 05 
+39 83 05 5F 84 06 
+24 85 06 3A 
+86 18 9E FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 07 AA 00 
+7C 34 AB 02 10 51 
+8A 01 52 81 
+04 53 82 05 25 83 
+05 51 84 06 
+14 85 06 3A 86 18 
+9E FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 06 AA 00 
+7C 34 AB 02 10 52 
+8A 01 52 81 
+04 61 82 05 2F 83 
+05 51 84 06 
+14 85 06 3B 86 18 
+9E FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 06 AA 00 
+7C 34 AB 02 10 52 
+8A 01 52 81 
+04 61 82 05 2F 83 
+05 5E 84 06 
+23 85 06 2F 86 18 
+9E 9E 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 06 AA 00 
+7C 34 AB 02 10 53 
+8A 01 52 81 
+04 4C 82 05 26 83 
+05 58 84 06 
+20 85 06 38 86 18 
+9E 9E 
+80 FF 7F A0 31 A1 
+2B A2 
+06 40 A3 0D A4 17 
+A5 05 39 A6 
+02 66 A7 00 00 A8 
+00 20 A9 06 
+AA 00 7C 34 AB 02 
+10 53 8A 01 
+52 81 04 61 82 05 
+2C 83 05 5B 
+84 06 20 85 06 38 
+86 18 86 FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 06 AA 00 
+7C 34 AB 02 10 54 
+8A 01 52 81 
+04 63 82 05 2C 83 
+05 5B 84 06 
+23 85 06 37 86 18 
+60 FE 
+80 FF 
+7F A0 31 A1 2B A2 
+06 40 A3 0D 
+A4 17 A5 05 39 A6 
+02 66 A7 00 
+00 A8 00 20 A9 06 
+AA 00 7C 34 
+AB 02 10 54 8A 01 
+52 81 04 63 
+82 05 38 83 05 63 
+84 06 21 85 
+06 40 86 18 86 FE 
+80 FF 7F A0 31 A1 
+2B A2 06 40 
+A3 0D A4 17 A5 05 
+39 A6 02 66 
+A7 00 00 A8 00 20 
+A9 06 AA 00 
+7C 34 AB 02 10 55 
+8A 01 52 81 
+04 55 82 05 2C 83 
+05 55 84 06 
+20 85 06 40 86 18 
+86 FE 

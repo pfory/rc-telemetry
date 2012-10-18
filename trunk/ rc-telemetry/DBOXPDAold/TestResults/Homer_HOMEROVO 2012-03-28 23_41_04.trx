@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="47f55fb3-5142-4a12-916d-664bcbae68a6" name="Homer@HOMEROVO 2012-03-28 23:41:04" runUser="HOMEROVO\Homer" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="Local SmartDevices Test Run" id="eaf9488b-4c80-433e-88d8-9dc68726b8bb">
+    <Description>This is a default test run configuration for a local SmartDevice test run.</Description>
+    <Deployment runDeploymentRoot="C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestResults\Homer_HOMEROVO 2012-03-28 23_41_04">
+      <DeploymentItem filename="C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\DBox\Nini.dll" />
+      <DeploymentItem filename="C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\DBox\bin\Debug\DBox.exe" />
+    </Deployment>
+    <Hosts type="Smart Device">
+      <DeviceHostRunConfigData name="Smart Device" deviceId="25D984D9-0DFE-4DB1-A5A0-9A4F660BF2CE" deviceName="USA Windows Mobile 5.0 Pocket PC R2 Emulator" platformId="4118C335-430C-497f-BE48-11C3316B135E" platformName="Windows Mobile 5.0 Pocket PC SDK" uiPlatformId="4118C335-430C-497f-BE48-11C3316B135E" />
+    </Hosts>
+    <TestTypeSpecific />
+  </TestRunConfiguration>
+  <ResultSummary outcome="Error">
+    <Counters total="7" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="7" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="HOMEROVO" outcome="Error" timestamp="2012-03-28T23:41:05.2180000+02:00">
+        <Text>Failed to queue test run 'Homer@HOMEROVO 2012-03-28 23:41:04': Unable to start program 'E:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\vstesthost.exe'.
+
+An error occurred that usually indicates a corrupt installation (code 0x80004002). If the problem persists, repair your Visual Studio installation via 'Add or Remove Programs' in Control Panel.</Text>
+        <Exception>System.Runtime.InteropServices.COMException (0x89710016): Unable to start program 'E:\Program Files\Microsoft Visual Studio 9.0\Common7\IDE\vstesthost.exe'.
+
+An error occurred that usually indicates a corrupt installation (code 0x80004002). If the problem persists, repair your Visual Studio installation via 'Add or Remove Programs' in Control Panel.
+   at System.Windows.Forms.Control.MarshaledInvoke(Control caller, Delegate method, Object[] args, Boolean synchronous)
+   at System.Windows.Forms.Control.Invoke(Delegate method, Object[] args)
+   at Microsoft.VisualStudio.TestTools.TestCaseManagement.UIThreadInvoker.Invoke(Delegate method, Object[] args)
+   at Microsoft.VisualStudio.TestTools.TestCaseManagement.SolutionIntegrationManager.DebugTarget(DebugInfo debugInfo, Boolean prepareEnvironment)
+   at Microsoft.VisualStudio.TestTools.TestManagement.DebugProcessLauncher.Launch(String exeFileName, String args, String workingDir, EventHandler processExitedHandler, Process&amp; process)
+   at Microsoft.VisualStudio.TestTools.TestManagement.LocalControllerProxy.StartProcess(TestRun run)
+   at Microsoft.VisualStudio.TestTools.TestManagement.LocalControllerProxy.RestartProcess(TestRun run)
+   at Microsoft.VisualStudio.TestTools.TestManagement.LocalControllerProxy.PrepareProcess(TestRun run)
+   at Microsoft.VisualStudio.TestTools.TestManagement.LocalControllerProxy.InitializeController(TestRun run)
+   at Microsoft.VisualStudio.TestTools.TestManagement.ControllerProxy.QueueTestRunWorker(Object state)</Exception>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <Times creation="2012-03-28T23:41:04.5650000+02:00" queuing="2012-03-28T23:41:04.5650000+02:00" start="2012-03-28T23:41:04.5650000+02:00" finish="2012-03-28T23:41:05.2190000+02:00" />
+  <TestDefinitions>
+    <UnitTest name="set_AirportNameTest" storage="c:\dokumenty\elektro\konstrukce\rc telemetry\dboxpda\testairport\bin\debug\testairport.dll" id="65919945-e26d-3ca8-16ed-0923d8b6e8b6">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestAirport\bin\Debug\TestAirport.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAirport.AirportTest, TestAirport" name="set_AirportNameTest" />
+    </UnitTest>
+    <UnitTest name="get_AirportNameTest" storage="c:\dokumenty\elektro\konstrukce\rc telemetry\dboxpda\testairport\bin\debug\testairport.dll" id="af1ce17c-01a3-40c2-2f17-a98032d63d39">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestAirport\bin\Debug\TestAirport.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAirport.AirportTest, TestAirport" name="get_AirportNameTest" />
+    </UnitTest>
+    <UnitTest name="set_AirportIDTest" storage="c:\dokumenty\elektro\konstrukce\rc telemetry\dboxpda\testairport\bin\debug\testairport.dll" id="133ce561-d845-830e-d1ce-02073c2786e6">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestAirport\bin\Debug\TestAirport.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAirport.AirportTest, TestAirport" name="set_AirportIDTest" />
+    </UnitTest>
+    <UnitTest name="set_AirportAltitudeTest" storage="c:\dokumenty\elektro\konstrukce\rc telemetry\dboxpda\testairport\bin\debug\testairport.dll" id="7ca93f27-601f-17c1-0ee3-1515365324e3">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestAirport\bin\Debug\TestAirport.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAirport.AirportTest, TestAirport" name="set_AirportAltitudeTest" />
+    </UnitTest>
+    <UnitTest name="AirportConstructorTest" storage="c:\dokumenty\elektro\konstrukce\rc telemetry\dboxpda\testairport\bin\debug\testairport.dll" id="44079aac-a6b2-fb3e-147e-a5aaed4ee282">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestAirport\bin\Debug\TestAirport.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAirport.AirportTest, TestAirport" name="AirportConstructorTest" />
+    </UnitTest>
+    <UnitTest name="get_AirportAltitudeTest" storage="c:\dokumenty\elektro\konstrukce\rc telemetry\dboxpda\testairport\bin\debug\testairport.dll" id="221a9e43-5ad8-abcc-d341-d9c24a7670c2">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestAirport\bin\Debug\TestAirport.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAirport.AirportTest, TestAirport" name="get_AirportAltitudeTest" />
+    </UnitTest>
+    <UnitTest name="get_AirportIDTest" storage="c:\dokumenty\elektro\konstrukce\rc telemetry\dboxpda\testairport\bin\debug\testairport.dll" id="30e66b69-cafa-ced1-d9a5-e863a2e90e37">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <TestMethod codeBase="C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestAirport\bin\Debug\TestAirport.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestAirport.AirportTest, TestAirport" name="get_AirportIDTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="65919945-e26d-3ca8-16ed-0923d8b6e8b6" executionId="122810e3-05ec-4ba7-9a45-119a6c130019" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="133ce561-d845-830e-d1ce-02073c2786e6" executionId="770e3349-d3d1-4199-84e6-43402cd3fefd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7ca93f27-601f-17c1-0ee3-1515365324e3" executionId="2f12c92f-2f21-4451-a12e-08672a844d20" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="af1ce17c-01a3-40c2-2f17-a98032d63d39" executionId="99a803a7-1259-4db1-9d4f-03dca59a9ff5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30e66b69-cafa-ced1-d9a5-e863a2e90e37" executionId="dfbb5be0-28a0-4807-a310-117bf21541b6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="221a9e43-5ad8-abcc-d341-d9c24a7670c2" executionId="05461c3e-60b1-4ec3-8a60-028297825193" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="44079aac-a6b2-fb3e-147e-a5aaed4ee282" executionId="e527940f-ec79-4496-8eec-9dc16d40372b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="122810e3-05ec-4ba7-9a45-119a6c130019" testId="65919945-e26d-3ca8-16ed-0923d8b6e8b6" testName="set_AirportNameTest" computerName="HOMEROVO" duration="00:00:00" startTime="0001-01-01T01:00:00.0000000+01:00" endTime="0001-01-01T01:00:00.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+    </UnitTestResult>
+    <UnitTestResult executionId="770e3349-d3d1-4199-84e6-43402cd3fefd" testId="133ce561-d845-830e-d1ce-02073c2786e6" testName="set_AirportIDTest" computerName="HOMEROVO" duration="00:00:00" startTime="0001-01-01T01:00:00.0000000+01:00" endTime="0001-01-01T01:00:00.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+    </UnitTestResult>
+    <UnitTestResult executionId="2f12c92f-2f21-4451-a12e-08672a844d20" testId="7ca93f27-601f-17c1-0ee3-1515365324e3" testName="set_AirportAltitudeTest" computerName="HOMEROVO" duration="00:00:00" startTime="0001-01-01T01:00:00.0000000+01:00" endTime="0001-01-01T01:00:00.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+    </UnitTestResult>
+    <UnitTestResult executionId="99a803a7-1259-4db1-9d4f-03dca59a9ff5" testId="af1ce17c-01a3-40c2-2f17-a98032d63d39" testName="get_AirportNameTest" computerName="HOMEROVO" duration="00:00:00" startTime="0001-01-01T01:00:00.0000000+01:00" endTime="0001-01-01T01:00:00.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+    </UnitTestResult>
+    <UnitTestResult executionId="dfbb5be0-28a0-4807-a310-117bf21541b6" testId="30e66b69-cafa-ced1-d9a5-e863a2e90e37" testName="get_AirportIDTest" computerName="HOMEROVO" duration="00:00:00" startTime="0001-01-01T01:00:00.0000000+01:00" endTime="0001-01-01T01:00:00.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+    </UnitTestResult>
+    <UnitTestResult executionId="05461c3e-60b1-4ec3-8a60-028297825193" testId="221a9e43-5ad8-abcc-d341-d9c24a7670c2" testName="get_AirportAltitudeTest" computerName="HOMEROVO" duration="00:00:00" startTime="0001-01-01T01:00:00.0000000+01:00" endTime="0001-01-01T01:00:00.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+    </UnitTestResult>
+    <UnitTestResult executionId="e527940f-ec79-4496-8eec-9dc16d40372b" testId="44079aac-a6b2-fb3e-147e-a5aaed4ee282" testName="AirportConstructorTest" computerName="HOMEROVO" duration="00:00:00" startTime="0001-01-01T01:00:00.0000000+01:00" endTime="0001-01-01T01:00:00.0000000+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="NotExecuted" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+    </UnitTestResult>
+  </Results>
+</TestRun>

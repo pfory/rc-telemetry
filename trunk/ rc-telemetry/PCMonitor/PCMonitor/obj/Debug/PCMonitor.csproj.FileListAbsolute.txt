@@ -1,0 +1,8 @@
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\bin\Debug\PCMonitor.exe
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\bin\Debug\PCMonitor.pdb
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\obj\Debug\PCMonitor.Form1.resources
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\obj\Debug\PCMonitor.Properties.Resources.resources
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\obj\Debug\PCMonitor.csproj.GenerateResource.Cache
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\obj\Debug\PCMonitor.exe
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\obj\Debug\PCMonitor.pdb

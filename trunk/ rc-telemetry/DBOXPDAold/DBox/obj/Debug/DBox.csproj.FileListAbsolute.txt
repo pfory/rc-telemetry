@@ -1,0 +1,11 @@
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\DBox\bin\Debug\DBox.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\DBox\bin\Debug\DBox.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\DBox\bin\Debug\InTheHand.Net.Personal.dll
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\DBox\bin\Debug\Nini.dll
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\DBox\bin\Debug\InTheHand.Net.Personal.xml
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\DBox\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\DBox\obj\Debug\DBOX.Form2.resources
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\DBox\obj\Debug\DBox.Properties.Resources.resources
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\DBox\obj\Debug\DBox.csproj.GenerateResource.Cache
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\DBox\obj\Debug\DBox.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\DBox\obj\Debug\DBox.pdb

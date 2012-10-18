@@ -1,0 +1,15 @@
+E:\Users\Homer\AppData\Local\Temporary Projects\OffLineLogReader\obj\x86\Debug\ResolveAssemblyReference.cache
+E:\Users\Homer\AppData\Local\Temporary Projects\OffLineLogReader\bin\Debug\OffLineLogReader.exe
+E:\Users\Homer\AppData\Local\Temporary Projects\OffLineLogReader\bin\Debug\OffLineLogReader.pdb
+E:\Users\Homer\AppData\Local\Temporary Projects\OffLineLogReader\obj\x86\Debug\OffLineLogReader.exe
+E:\Users\Homer\AppData\Local\Temporary Projects\OffLineLogReader\obj\x86\Debug\OffLineLogReader.pdb
+J:\OffLineLogReader\OffLineLogReader\obj\x86\Debug\OffLineLogReader.exe
+J:\OffLineLogReader\OffLineLogReader\obj\x86\Debug\OffLineLogReader.pdb
+J:\OffLineLogReader\OffLineLogReader\bin\Debug\OffLineLogReader.exe
+J:\OffLineLogReader\OffLineLogReader\bin\Debug\OffLineLogReader.pdb
+J:\OffLineLogReader\OffLineLogReader\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\OffLineLogReader\OffLineLogReader\bin\Debug\OffLineLogReader.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\OffLineLogReader\OffLineLogReader\bin\Debug\OffLineLogReader.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\OffLineLogReader\OffLineLogReader\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\OffLineLogReader\OffLineLogReader\obj\x86\Debug\OffLineLogReader.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\OffLineLogReader\OffLineLogReader\obj\x86\Debug\OffLineLogReader.pdb

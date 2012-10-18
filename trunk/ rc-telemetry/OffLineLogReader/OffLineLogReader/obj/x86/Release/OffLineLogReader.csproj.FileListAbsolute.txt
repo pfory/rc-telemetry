@@ -1,0 +1,5 @@
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\OffLineLogReader\OffLineLogReader\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\OffLineLogReader\OffLineLogReader\bin\Release\OffLineLogReader.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\OffLineLogReader\OffLineLogReader\bin\Release\OffLineLogReader.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\OffLineLogReader\OffLineLogReader\obj\x86\Release\OffLineLogReader.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\OffLineLogReader\OffLineLogReader\obj\x86\Release\OffLineLogReader.pdb
