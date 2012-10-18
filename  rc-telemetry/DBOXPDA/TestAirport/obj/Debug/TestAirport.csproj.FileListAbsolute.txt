@@ -1,0 +1,8 @@
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestAirport\bin\Debug\TestAirport.dll
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestAirport\bin\Debug\TestAirport.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestAirport\bin\Debug\DBox.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestAirport\bin\Debug\Nini.dll
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestAirport\bin\Debug\DBox.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestAirport\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestAirport\obj\Debug\TestAirport.dll
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\TestAirport\obj\Debug\TestAirport.pdb

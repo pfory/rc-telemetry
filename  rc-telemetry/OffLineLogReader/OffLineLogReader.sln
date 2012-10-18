@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OffLineLogReader", "OffLineLogReader\OffLineLogReader.csproj", "{C855E707-9D26-4F4A-8767-95FDCDFEAEE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogDecoder", "LogDecoder\LogDecoder.csproj", "{E0EC9C42-3D7F-4666-8C0B-11244A703D76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C855E707-9D26-4F4A-8767-95FDCDFEAEE4}.Debug|x86.ActiveCfg = Debug|x86
+		{C855E707-9D26-4F4A-8767-95FDCDFEAEE4}.Debug|x86.Build.0 = Debug|x86
+		{C855E707-9D26-4F4A-8767-95FDCDFEAEE4}.Release|x86.ActiveCfg = Release|x86
+		{C855E707-9D26-4F4A-8767-95FDCDFEAEE4}.Release|x86.Build.0 = Release|x86
+		{E0EC9C42-3D7F-4666-8C0B-11244A703D76}.Debug|x86.ActiveCfg = Debug|x86
+		{E0EC9C42-3D7F-4666-8C0B-11244A703D76}.Debug|x86.Build.0 = Debug|x86
+		{E0EC9C42-3D7F-4666-8C0B-11244A703D76}.Release|x86.ActiveCfg = Release|x86
+		{E0EC9C42-3D7F-4666-8C0B-11244A703D76}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

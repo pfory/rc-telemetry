@@ -1,0 +1,14 @@
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\SerialPortTerminal\bin\Debug\SerialPort Terminal.exe.config
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\SerialPortTerminal\bin\Debug\SerialPort Terminal.exe.manifest
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\SerialPortTerminal\bin\Debug\SerialPort Terminal.application
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\SerialPortTerminal\bin\Debug\SerialPort Terminal.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\SerialPortTerminal\bin\Debug\SerialPort Terminal.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\SerialPortTerminal\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\SerialPortTerminal\obj\Debug\SerialPortTerminal.frmAbout.resources
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\SerialPortTerminal\obj\Debug\SerialPortTerminal.frmTerminal.resources
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\SerialPortTerminal\obj\Debug\SerialPortTerminal.Properties.Resources.resources
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\SerialPortTerminal\obj\Debug\SerialPort Terminal.exe.manifest
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\SerialPortTerminal\obj\Debug\SerialPort Terminal.application
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\SerialPortTerminal\obj\Debug\SerialPort Terminal.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\SerialPortTerminal\obj\Debug\SerialPort Terminal.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\SerialPortTerminal\obj\Debug\SerialPortTerminal.csproj.GenerateResource.Cache

@@ -1,0 +1,6 @@
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\Test\bin\Debug\Test.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\Test\bin\Debug\Test.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\Test\obj\Debug\ResolveAssemblyReference.cache
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\Test\obj\Debug\Test.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\Test\obj\Debug\Test.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPDA\Test\bin\Debug\Nini.dll

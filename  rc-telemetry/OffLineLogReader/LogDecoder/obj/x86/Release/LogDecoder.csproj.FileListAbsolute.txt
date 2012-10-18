@@ -1,0 +1,7 @@
+J:\OffLineLogReader\LogDecoder\obj\x86\Release\ResolveAssemblyReference.cache
+J:\OffLineLogReader\LogDecoder\bin\Release\LogDecoder.exe
+J:\OffLineLogReader\LogDecoder\bin\Release\LogDecoder.pdb
+J:\OffLineLogReader\LogDecoder\obj\x86\Release\LogDecoder.exe
+J:\OffLineLogReader\LogDecoder\obj\x86\Release\LogDecoder.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\OffLineLogReader\LogDecoder\obj\x86\Release\LogDecoder.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\OffLineLogReader\LogDecoder\obj\x86\Release\LogDecoder.pdb

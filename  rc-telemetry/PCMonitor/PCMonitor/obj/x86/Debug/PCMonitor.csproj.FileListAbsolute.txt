@@ -1,0 +1,16 @@
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\bin\x86\Debug\PCMonitor.exe
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\bin\x86\Debug\PCMonitor.pdb
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\obj\x86\Debug\PCMonitor.Form1.resources
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\obj\x86\Debug\PCMonitor.Properties.Resources.resources
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\obj\x86\Debug\PCMonitor.csproj.GenerateResource.Cache
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\obj\x86\Debug\PCMonitor.exe
+C:\Dokumenty\Elektro\Konstrukce\mereni\PCMonitor\PCMonitor\obj\x86\Debug\PCMonitor.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\PCMonitor\PCMonitor\obj\x86\Debug\PCMonitor.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\PCMonitor\PCMonitor\obj\x86\Debug\PCMonitor.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\PCMonitor\PCMonitor\bin\x86\Debug\PCMonitor.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\PCMonitor\PCMonitor\bin\x86\Debug\PCMonitor.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\PCMonitor\PCMonitor\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\PCMonitor\PCMonitor\obj\x86\Debug\PCMonitor.Form1.resources
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\PCMonitor\PCMonitor\obj\x86\Debug\PCMonitor.Properties.Resources.resources
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\PCMonitor\PCMonitor\obj\x86\Debug\PCMonitor.csproj.GenerateResource.Cache

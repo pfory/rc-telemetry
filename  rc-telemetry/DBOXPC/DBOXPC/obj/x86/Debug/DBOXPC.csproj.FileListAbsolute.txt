@@ -1,0 +1,11 @@
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPC\DBOXPC\bin\Debug\DBOXPC.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPC\DBOXPC\bin\Debug\DBOXPC.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPC\DBOXPC\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPC\DBOXPC\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPC\DBOXPC\obj\x86\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPC\DBOXPC\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPC\DBOXPC\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPC\DBOXPC\obj\x86\Debug\DBOXPC.exe
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPC\DBOXPC\obj\x86\Debug\DBOXPC.pdb
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPC\DBOXPC\obj\x86\Debug\WindowsFormsApplication1.Resource1.resources
+C:\Dokumenty\Elektro\Konstrukce\RC Telemetry\DBOXPC\DBOXPC\bin\Debug\Nini.dll
