@@ -1,0 +1,1 @@
+RC Telemetry over FrSky module
